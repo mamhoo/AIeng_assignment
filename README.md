@@ -20,6 +20,7 @@
 
 # 4. Run backend
 - cd backend
+- put .env inside backend/app
 - uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 # 5. Run frontend (new terminal):
