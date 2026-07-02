@@ -16,7 +16,6 @@
 # 3. Load data (only once on new PC)
 - cd ..
 - python scripts/load_sql.py
-- python scripts/load_pinecone.py
 
 # 4. Run backend
 - cd backend
