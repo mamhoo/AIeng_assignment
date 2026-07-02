@@ -14,7 +14,7 @@ if "financial-10k" not in pc.list_indexes().names():
         metric="cosine",
         spec=ServerlessSpec(cloud="aws", region="us-east-1")
     )
-    print("✅ Index 'financial-10k' created with 512 dimension.")
+    print("Index 'financial-10k' created with 512 dimension.")
 
 index = pc.Index("financial-10k")
 
@@ -25,4 +25,4 @@ with gzip.open("data/pinecone_vectors.jsonl.gz", "rt") as f:
             del vector['namespace']
         index.upsert(vectors=[vector])
 
-print("✅ Pinecone vectors loaded successfully!")
+print("Pinecone vectors loaded successfully!")
