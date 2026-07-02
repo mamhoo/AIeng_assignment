@@ -6,6 +6,7 @@ pinecone
 langchain
 langchain-community
 langchain-google-genai
+langchain-pinecone
 langgraph
 python-dotenv
 passlib[bcrypt]
